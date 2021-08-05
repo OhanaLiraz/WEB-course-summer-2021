@@ -1,3 +1,3 @@
-# WEB-course-summer-2021
+# WEB_summer_2021
 HM1
 liraz ohana
