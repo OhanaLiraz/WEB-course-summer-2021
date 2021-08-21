@@ -1,14 +1,69 @@
-.grid-container{
-    display: grid;
-    grid-template-areas: 'item1 item1' 'item2 item3''item2 item3';
+body{
+    
+    background-repeat: repeat;
+    background-image: url("gg.png");
+    background-color: rgba(255, 255, 255, 0.486);
+    background-blend-mode: overlay;    
 }
-.item1{
-    grid-area: item1;
+:root{
+    --Blue : #023973;
+    --orange : #e3a117 ;
+    --red : #a23b23 ;
 }
-.item2{
-    grid-area: item2;
+a{
+    color: var(--red);
+    font-size: 3vw;
+    border: 6px solid transparent;
 
 }
-.item3{
-    grid-area: item3;
+h1{
+    color: var(--Blue);
+    font-size: 4vw;
+    text-align: right;
 }
+.grid-container{
+    display: grid;
+    grid-template-areas: 'head head' 'nav nav' 'info form' 'info form' ;
+}
+.headLine{
+    grid-area: head;
+
+}
+.nav_bar{
+    grid-area: nav;
+
+}
+.info{
+    grid-area: info;
+    font-size: 2vw;
+}
+.form{
+    grid-area: form;
+    font-size: 2vw;
+
+}
+#edu{
+    display:none;
+    }
+    #edu:target{
+        display: block;
+    }
+    #mili{
+        display:none;
+    }
+    #mili:target{
+         display: block;
+     }
+    #exp{
+        display:none;
+     }
+    #exp:target{
+        display: block;
+    }
+    #per{
+        display:none;
+    }
+    #per:target{
+        display: block;
+     }
+   
