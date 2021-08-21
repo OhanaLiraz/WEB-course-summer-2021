@@ -11,23 +11,25 @@ body{
     --red : #a23b23 ;
 }
 a{
-    color: var(--red);
+    color: var(--Blue);
     font-size: 3vw;
     border: 6px solid transparent;
 
 }
 h1{
-    color: var(--Blue);
     font-size: 4vw;
     text-align: right;
 }
+
 .grid-container{
     display: grid;
     grid-template-areas: 'head head' 'nav nav' 'info form' 'info form' ;
 }
 .headLine{
     grid-area: head;
-
+    animation-name: backColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 .nav_bar{
     grid-area: nav;
@@ -66,4 +68,11 @@ h1{
     #per:target{
         display: block;
      }
+     @keyframes backColor {
+        0%   {color:var(--orange)}
+        25%  {color: var(--red)}
+        50%  {color: var(--orange)}
+        75%  {color: var(--red)}
+        100%   {color:var(--orange)}
+      }
    

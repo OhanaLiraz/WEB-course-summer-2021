@@ -4,11 +4,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>home work 2</title>
         <link rel="stylesheet" href="CV.css">
+        <script src="CV.js"></script>
     </head>
-    <body dir="rtl">
+    <body dir="rtl" onload=changeHeader()>
         <div class= "grid-container">
             <div class="headLine">
-            <h1>לירז אוחנה</h1>
+            <h1 id="h">לירז אוחנה - קורות חיים</h1>
+            <button onclick= initHeader()> הצג כותרת מקורית </button>
             </div>
             <div clas="nav_bar">
                 <nav>
@@ -42,4 +44,5 @@
             </span>
         </div>
     </body>
+  
 </html>
