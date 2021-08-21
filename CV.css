@@ -1,73 +1,14 @@
-:root{
-    --Blue : #023973;
-    --orange : #e3a117 ;
-    --red : #a23b23 ;
-}
-body{
-    
-    background-repeat: repeat;
-    background-image: url("gg.png");
-    background-color: rgba(255, 255, 255, 0.486);
-    background-blend-mode: overlay;    
-}
-
-h1{
-    color: var(--Blue);
-    font-size: 4vw;
-    text-align: right;
-}
-div{
-    font-size: 3vw;
-}
-
-a{
-    color: var(--red);
-    font-size: 4vw;
-    border: 6px solid transparent;
-
-}
 .grid-container{
     display: grid;
-    grid-template-areas: 'item2 item2  aa aa'
-    ' item2 item2 aa aa' ;
+    grid-template-areas: 'item1 item1' 'item2 item3''item2 item3';
 }
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
 
-#item1{
-    grid-area: "item1" ;
 }
-#item2{
-grid-area: "item2"; 
- 
+.item3{
+    grid-area: item3;
 }
-
-#edu{
-display:none;
-}
-#edu:target{
-    display: block;
-}
-#mili{
-    display:none;
-}
-#mili:target{
-     display: block;
- }
-#exp{
-    display:none;
- }
-#exp:target{
-    display: block;
-}
-#per{
-    display:none;
-}
-#per:target{
-    display: block;
- }
- #text{
-     font-size: 30px;
- }
-
-
-
-
