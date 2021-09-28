@@ -1,0 +1,78 @@
+body{
+    
+    background-repeat: repeat;
+    background-image: url("/images/gg.png");
+    background-color: rgba(255, 255, 255, 0.486);
+    background-blend-mode: overlay;    
+}
+:root{
+    --Blue : #023973;
+    --orange : #e3a117 ;
+    --red : #a23b23 ;
+}
+a{
+    color: var(--Blue);
+    font-size: 3vw;
+    border: 6px solid transparent;
+
+}
+h1{
+    font-size: 4vw;
+    text-align: right;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 'head head' 'nav nav' 'info form' 'info form' ;
+}
+.headLine{
+    grid-area: head;
+    animation-name: backColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.nav_bar{
+    grid-area: nav;
+
+}
+.info{
+    grid-area: info;
+    font-size: 2vw;
+}
+.form{
+    grid-area: form;
+    font-size: 2vw;
+
+}
+#edu{
+    display:none;
+    }
+    #edu:target{
+        display: block;
+    }
+    #mili{
+        display:none;
+    }
+    #mili:target{
+         display: block;
+     }
+    #exp{
+        display:none;
+     }
+    #exp:target{
+        display: block;
+    }
+    #per{
+        display:none;
+    }
+    #per:target{
+        display: block;
+     }
+     @keyframes backColor {
+        0%   {color:var(--orange)}
+        25%  {color: var(--red)}
+        50%  {color: var(--orange)}
+        75%  {color: var(--red)}
+        100%   {color:var(--orange)}
+      }
+   
